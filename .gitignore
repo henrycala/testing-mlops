@@ -1,0 +1,23 @@
+# Entorno y caches
+.venv/
+__pycache__/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# Artefactos generados por los flows (se regeneran con los scripts)
+.metaflow/
+mlruns/
+mlflow.db
+reports/
+
+# Datos del servidor de MLflow en Docker (actividades/actividad-1/mlflow_store/)
+mlflow_store/
+
+# Certificado raíz del antivirus y copia local de la UI de Metaflow (ver services/README.md)
+services/certs/
+*.crt
+services/metaflow-ui-src*/
+services/metaflow-service/
+services/metaflow-service-*/
+services/ca-base/
